@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>demo</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      myname = "global";
+      function func(){
+        var myname;
+        console.log(myname);
+        myname = "local";
+        console.log(myname);
+      }
+      func();
+    </script>
+
+  </body>
+</html>
